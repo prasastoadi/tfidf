@@ -1,7 +1,11 @@
+import math
+
+#membuat fungsi dengan nama tf
 def tf(n_terms, total_terms):
     tf = n_terms / total_terms
     return tf
 
 
-def idf():
-    pass
+def idf(n_docs, n_docs_with_term):
+    idf = math.log10(n_docs/n_docs_with_term)
+    return idf
